@@ -37,9 +37,12 @@ export class NoteCardComponent {
   }
 
   deleteNote(e: Event) {
-    e.stopPropagation();
-    this._noteStore.deleteItem(this.note.id)
-    this._extension.openSnackBar('Note Deleted Successfully', 'Oh')
-    this.onDelete.emit()
+    const confirm = window.confirm('Are you sure you want to delete this note?')
+    if (confirm) {
+      e.stopPropagation();
+      this._noteStore.deleteItem(this.note.id)
+      this._extension.openSnackBar('Note Deleted Successfully', 'Oh')
+      this.onDelete.emit()
+    }
   }
 }

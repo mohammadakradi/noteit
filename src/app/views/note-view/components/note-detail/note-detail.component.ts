@@ -40,9 +40,12 @@ export class NoteDetailComponent {
   }
 
   deleteNote(e: Event) {
-    e.stopPropagation();
-    this._noteStore.deleteItem(+this.noteId);
-    this._extension.openSnackBar('Note Deleted Successfully', 'Oh')
-    this._router.navigate([''])
+    const confirm = window.confirm('Are you sure you want to delete this note?')
+    if (confirm) {
+      e.stopPropagation();
+      this._noteStore.deleteItem(+this.noteId);
+      this._extension.openSnackBar('Note Deleted Successfully', 'Oh')
+      this._router.navigate([''])
+    }
   }
 }
