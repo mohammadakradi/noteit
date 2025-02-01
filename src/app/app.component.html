@@ -1,29 +1,5 @@
 <div >
-  <nav class="navbar">
-    <div class="container">
-      <div class="navbar-content">
-
-        <a routerLink="/" class="logo">
-          <span class="logo-text">Noteit</span>
-        </a>
-
-        <div class="nav-links">
-          <a
-            routerLink="/"
-            [ngClass]="{'active': isActiveLink('/')}"
-            class="nav-link">
-            Notes
-          </a>
-          <a
-            routerLink="/add"
-            [ngClass]="{'active': isActiveLink('/add')}"
-            class="nav-link">
-            Add Note
-          </a>
-        </div>
-      </div>
-    </div>
-  </nav>
+  <app-navbar></app-navbar>
   <div class="container">
     <router-outlet></router-outlet>
   </div>

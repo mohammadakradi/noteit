@@ -4,7 +4,7 @@ import { NoteStoreService } from '../notes-list/services/note-store.service';
 import { NoteItemModel } from '../notes-list/models/note.model';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { ExtensionsService } from '../../services/extensions.service';
+import { ExtensionsService } from '../../shared/services/extensions.service';
 
 @Component({
   selector: 'app-note-detail',

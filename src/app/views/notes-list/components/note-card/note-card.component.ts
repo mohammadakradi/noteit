@@ -5,7 +5,7 @@ import { MatCardModule } from '@angular/material/card';
 import { Router } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { NoteStoreService } from '../../services/note-store.service';
-import { ExtensionsService } from '../../../../services/extensions.service';
+import { ExtensionsService } from '../../../../shared/services/extensions.service';
 
 @Component({
   selector: 'app-note-card',

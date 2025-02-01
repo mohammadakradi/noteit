@@ -10,7 +10,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { NoteStoreService } from '../../services/note-store.service';
 import { NoteItemModel } from '../../models/note.model';
-import { ExtensionsService } from '../../../../services/extensions.service';
+import { ExtensionsService } from '../../../../shared/services/extensions.service';
 
 @Component({
   selector: 'app-create-edit-note',
