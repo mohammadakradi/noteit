@@ -37,6 +37,7 @@ export class NoteCardComponent {
   }
 
   deleteNote(e: Event) {
+    e.stopPropagation()
     const confirm = window.confirm('Are you sure you want to delete this note?')
     if (confirm) {
       e.stopPropagation();
