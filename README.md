@@ -20,6 +20,7 @@ __Used Libraries:__
 __Need to Improve:__
 * Designing a unique not found page (404) for the project to display for not existing routes
 * Not allowing the client to update a note if no changes have been applied
+* Writing directive for category in note-card to display different categories with different background color
 * Enhance UI/UX
 
 Have a look at this task using this [link](https://noteit-lake.vercel.app/)
