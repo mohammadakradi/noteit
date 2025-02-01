@@ -1,11 +1,11 @@
 import { Component, computed, EventEmitter, Input, Output } from '@angular/core';
-import { NoteItemModel } from '../../models/note.model';
+import { NoteItemModel } from '../../../../shared/models/note.model';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { Router } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
-import { NoteStoreService } from '../../services/note-store.service';
 import { ExtensionsService } from '../../../../shared/services/extensions.service';
+import { NoteStoreService } from '../../../../shared/services/note-store.service';
 
 @Component({
   selector: 'app-note-card',

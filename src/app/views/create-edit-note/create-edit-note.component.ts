@@ -1,16 +1,15 @@
 import { Component } from '@angular/core';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { AsyncPipe } from '@angular/common';
 import { map, Observable, startWith } from 'rxjs';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
-import { MatSnackBar } from '@angular/material/snack-bar';
-import { NoteStoreService } from '../../services/note-store.service';
-import { NoteItemModel } from '../../models/note.model';
-import { ExtensionsService } from '../../../../shared/services/extensions.service';
+import { NoteItemModel } from '../../shared/models/note.model';
+import { ExtensionsService } from '../../shared/services/extensions.service';
+import { NoteStoreService } from '../../shared/services/note-store.service';
 
 @Component({
   selector: 'app-create-edit-note',

@@ -1,6 +1,5 @@
 import { Component, HostListener, signal } from '@angular/core';
-import { NoteStoreService } from './services/note-store.service';
-import { NoteItemModel } from './models/note.model';
+import { NoteItemModel } from '../../shared/models/note.model';
 import { NoteCardComponent } from './components/note-card/note-card.component';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
@@ -8,6 +7,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { NoteStoreService } from '../../shared/services/note-store.service';
 
 @Component({
   selector: 'app-note-view',
