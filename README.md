@@ -22,5 +22,6 @@ __Need to Improve:__
 * Not allowing the client to update a note if no changes have been applied
 * Writing directive for category in note-card to display different categories with different background color
 * Enhance UI/UX
+* Use rich text editor for content of note
 
 Have a look at this task using this [link](https://noteit-lake.vercel.app/)
