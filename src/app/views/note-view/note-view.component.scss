@@ -1,0 +1,61 @@
+.notes-container {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); // Default: 3 columns
+    gap: 16px;
+
+    @media (max-width: 900px) {
+        grid-template-columns: repeat(2, 1fr); // 2 columns for tablets
+    }
+    @media (max-width: 425px) {
+        grid-template-columns: repeat(1, 1fr); // 1 column on small screens
+    }
+}
+
+.info{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 425PX){
+        flex-direction: column;
+    }
+}
+
+.filter{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .option{
+        padding: 8px 12px;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+        cursor: pointer;
+
+        &:hover{
+            color: white;
+            background-color: #3B49DC;
+        }
+
+        &.active{
+            color: white;
+            background-color: #2631b1;
+        }
+    }
+}
+
+.searchbar{
+    margin-top: 20px;
+}
+
+::ng-deep{
+    .mat-mdc-form-field-infix{
+        display: flex;
+    }
+}

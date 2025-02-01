@@ -1,0 +1,15 @@
+<mat-card class="note" appearance="outlined" (click)="navigate('note/')">
+  <mat-card-header>
+    <mat-card-title>{{note.title}}</mat-card-title>
+    <mat-card-subtitle style="font-style: italic;">{{note.category}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+      {{truncatedDescription()}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="navigate('edit/')"><mat-icon>edit</mat-icon> Edit</button>
+    <button mat-button (click)="deleteNote($event)"><mat-icon>delete</mat-icon> Delete</button>
+  </mat-card-actions>
+</mat-card>

@@ -1,0 +1,13 @@
+.note {
+    max-width: 400px;
+    text-align: justify;
+    height: 200px;
+    cursor: pointer;
+}
+
+::ng-deep{
+    .mat-mdc-card-actions{
+        flex: 1;
+        align-items: flex-end !important;
+    }
+}

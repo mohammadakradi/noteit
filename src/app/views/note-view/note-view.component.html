@@ -1,0 +1,27 @@
+<div class="header">
+    <div class="info">
+        <h1>Notes List</h1>
+        <h3>({{notesCount()}})</h3>
+    </div>
+    <div class="searchbar">
+        <mat-form-field class="example-form-field">
+            <!-- <mat-label>Clearable input</mat-label> -->
+            <input matInput type="text" placeholder="Search ..." [(ngModel)]="searchValue" (ngModelChange)="searchNotes()">
+            <mat-icon>search</mat-icon>
+            </mat-form-field>
+    </div>
+    <div class="filter">
+        @for(option of options; track option){
+            <span class="option" [ngClass]="{'active': isSelectedFilter(option)}" (click)="filterNotes(option)">{{option}}</span>
+        }
+    </div>
+</div>
+@if(filteredNotes.length > 0){
+    <div class="notes-container">
+        @for(note of filteredNotes; track note){
+            <app-note-card [note]="note" (onDelete)="getNotesList()"></app-note-card>
+        }
+    </div>
+} @else {
+    <p>There is no note to display... start by adding a new note from top right button</p>
+}

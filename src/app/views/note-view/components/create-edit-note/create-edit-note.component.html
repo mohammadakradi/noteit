@@ -1,0 +1,38 @@
+<div>
+    <h1>Add New Note</h1>
+    <form [formGroup]="noteForm" (ngSubmit)="submitNote()" class="form">
+        <div class="row">
+            <mat-form-field class="title">
+              <mat-label>Title</mat-label>
+              <input matInput placeholder="Ex. Reading book" formControlName="title">
+            </mat-form-field>
+      
+            <mat-form-field class="category">
+              <mat-label>Category</mat-label>
+              <input type="text"
+                  placeholder="Pick a category"
+                  aria-label="Category"
+                  matInput
+                  formControlName="category"
+                  [matAutocomplete]="auto">
+              <mat-autocomplete #auto="matAutocomplete">
+              @for (option of filteredOptions | async; track option) {
+                  <mat-option [value]="option">{{option}}</mat-option>
+              }
+              </mat-autocomplete>
+          </mat-form-field>
+        </div>
+    
+      <mat-form-field class="">
+        <mat-label>Leave a note</mat-label>
+        <textarea matInput placeholder="Ex. The new book..." rows="5" formControlName="content"></textarea>
+      </mat-form-field>
+
+      @if(isLoading){
+        <span class="loader"></span>
+      } @else {  
+          <button type="submit" mat-raised-button>{{ buttonLabel }}</button>
+        }
+
+    </form>
+</div>
