@@ -20,8 +20,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatInputModule,
     MatFormFieldModule
   ],
-  templateUrl: './note-view.component.html',
-  styleUrl: './note-view.component.scss'
+  templateUrl: './notes-list.component.html',
+  styleUrl: './notes-list.component.scss'
 })
 export class NoteViewComponent {
   notes: NoteItemModel[] = [];

@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Route, Router } from '@angular/router';
-import { NoteStoreService } from '../../services/note-store.service';
-import { NoteItemModel } from '../../models/note.model';
+import { NoteStoreService } from '../notes-list/services/note-store.service';
+import { NoteItemModel } from '../notes-list/models/note.model';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { ExtensionsService } from '../../../../services/extensions.service';
+import { ExtensionsService } from '../../services/extensions.service';
 
 @Component({
   selector: 'app-note-detail',

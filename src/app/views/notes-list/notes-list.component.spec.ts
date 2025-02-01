@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NoteViewComponent } from './note-view.component';
+import { NoteViewComponent } from './notes-list.component';
 
 describe('NoteViewComponent', () => {
   let component: NoteViewComponent;
@@ -10,7 +10,7 @@ describe('NoteViewComponent', () => {
     await TestBed.configureTestingModule({
       imports: [NoteViewComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(NoteViewComponent);
     component = fixture.componentInstance;

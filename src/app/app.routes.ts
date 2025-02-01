@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { NoteViewComponent } from './views/note-view/note-view.component';
-import { CreateEditNoteComponent } from './views/note-view/components/create-edit-note/create-edit-note.component';
-import { NoteDetailComponent } from './views/note-view/components/note-detail/note-detail.component';
+import { NoteViewComponent } from './views/notes-list/notes-list.component';
+import { CreateEditNoteComponent } from './views/notes-list/components/create-edit-note/create-edit-note.component';
+import { NoteDetailComponent } from './views/note-detail/note-detail.component';
 
 export const routes: Routes = [
     {

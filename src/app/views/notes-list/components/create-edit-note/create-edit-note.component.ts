@@ -34,6 +34,7 @@ export class CreateEditNoteComponent {
   buttonLabel: string = 'Add';
   noteItem?: NoteItemModel;
   isLoading = false;
+  title: string = 'Add New Note';
 
   constructor(
     private fb: FormBuilder,
@@ -52,6 +53,7 @@ export class CreateEditNoteComponent {
     if (this.route.snapshot.params['id']) {
       this.editId = this.route.snapshot.params['id'];
       this.buttonLabel = 'Update';
+      this.title = 'Edit Note'
       this.getItem();
     }
   }
