@@ -7,7 +7,7 @@
     @media (max-width: 900px) {
         grid-template-columns: repeat(2, 1fr); // 2 columns for tablets
     }
-    @media (max-width: 425px) {
+    @media (max-width: 430px) {
         grid-template-columns: repeat(1, 1fr); // 1 column on small screens
     }
 }
@@ -22,7 +22,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media (max-width: 425PX){
+    @media (max-width: 430PX){
         flex-direction: column;
     }
 }
@@ -52,10 +52,17 @@
 
 .searchbar{
     margin-top: 20px;
+    width: 275px;
 }
 
 ::ng-deep{
     .mat-mdc-form-field-infix{
         display: flex;
+    }
+    .mdc-text-field--filled {
+        background-color: transparent !important;
+    }
+    .mat-mdc-form-field{
+        width: 100%;
     }
 }

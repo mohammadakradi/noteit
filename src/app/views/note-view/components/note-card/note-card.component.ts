@@ -28,7 +28,9 @@ export class NoteCardComponent {
   ) { }
   truncatedDescription = computed(() => {
     let description = this.note.content;
-    description = description.substring(0, 15) + ' ...';
+    if (description.length > 15) {
+      description = description.substring(0, 15) + ' ...';
+    }
     return description;
   })
 

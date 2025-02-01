@@ -14,6 +14,6 @@ export class ExtensionsService {
     this._snackBar.open(message, action);
     setTimeout(() => {
       this._snackBar.dismiss()
-    }, 2000);
+    }, 4000);
   }
 }
