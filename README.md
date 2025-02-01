@@ -22,3 +22,5 @@ __Need to Improve:__
 * Not allowing the client to update a note if no changes have been applied
 * Confirm if the client wants to delete and item
 * Enhance UI/UX
+
+Have a look at this task using this [link](https://noteit-lake.vercel.app/)
